@@ -1,134 +1,141 @@
-🌊✨ Women Safety App — Guardian Angel ✨🌊
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=ff69b4,8a2be2&height=200&section=header&text=Guardian%20Angel&fontSize=40&fontColor=ffffff&animation=fadeIn"/> </p> <p align="center"> <img src="https://readme-typing-svg.herokuapp.com?color=FF69B4&size=22&center=true&vCenter=true&width=600&lines=Empowering+Women+Through+Technology;Your+Safety+%2C+Our+Priority;One+Tap+Can+Save+Lives"/> </p>
-<p align="center"> <img src="https://img.shields.io/badge/Status-Prototype-ff69b4?style=for-the-badge&logo=appveyor"/> <img src="https://img.shields.io/badge/Platform-Android-blueviolet?style=for-the-badge&logo=android"/> <img src="https://img.shields.io/badge/Security-High-success?style=for-the-badge&logo=shield"/> <img src="https://img.shields.io/badge/Made%20With-Love-ff1493?style=for-the-badge"/> </p>
+🌸 Women Safety App — Simple Guardian Prototype 🌸
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=ff69b4,8a2be2&height=180&section=header&text=Women%20Safety%20App&fontSize=35&fontColor=ffffff"/> </p> <p align="center"> <img src="https://readme-typing-svg.herokuapp.com?color=FF69B4&size=20&center=true&vCenter=true&width=600&lines=Python+Based+Safety+Prototype;Client-Server+Architecture;Runs+Locally+with+SQLite"/> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Status-Prototype-ff69b4?style=for-the-badge"/> <img src="https://img.shields.io/badge/Architecture-Client--Server-blueviolet?style=for-the-badge"/> <img src="https://img.shields.io/badge/Database-SQLite-success?style=for-the-badge"/> <img src="https://img.shields.io/badge/User-metadore-ff1493?style=for-the-badge"/> </p>
 💖 About The Project
 
-“Safety should be instant, reliable, and always within reach.”
+This is a Python-based Women Safety App Prototype that demonstrates how emergency systems can be built using a client-server architecture running locally.
 
-🌸 Guardian Angel is a next-gen Women Safety App Prototype designed to provide instant emergency response with a beautiful, stress-free user experience.
+⚡ Key focus:
 
-💡 Built with a mission to:
+Simple implementation
 
-Protect 🚨
+Fast execution
 
-Empower 💪
+No external dependencies
 
-Respond instantly ⚡
+Fully local system
 
- Features
-🆘 One-Tap SOS
+“In emergencies, simplicity is power.”
 
-✨ Send emergency alert instantly
-📍 Share real-time GPS location
-📲 Notify trusted contacts
+🚀 Features
+🆘 SOS Trigger
 
-📍 Live Location Tracking
+Sends emergency request from client to server
 
-Continuous GPS updates
+Can be extended for alerts & notifications
 
-Track movement in real-time
+📡 Client-Server Communication
 
-🔊 Smart Alarm System
+Real-time interaction between client and server
 
-Loud emergency siren
+Simulates emergency request handling
 
-Draws attention immediately
+🗄️ Local Database Support
 
-📞 Emergency Calling
+Uses SQLite (safezone.db)
 
-Direct call to police
+Stores safety-related data locally
 
-Works in seconds
+🧪 Demo Mode
 
-🧠 Smart Triggers (Coming Soon)
+demo_client.py allows easy testing of features
 
-Shake detection 📳
+🧠 Working Architecture
 
-Voice activation 🎙️
+This project follows a simple client-server model:
 
-AI-based risk detection 🤖
+🖥️ server.py handles backend logic
 
-🎨 UI / UX Design
+📱 client.py / demo_client.py act as client-side apps
 
-💫 Smooth animations
-🌈 Soft gradient themes
-📱 Minimal & intuitive interface
+🗄️ safezone.db stores data locally
 
-Design Goal:
-"Even in panic, the app must feel effortless."
-🛠️ Tech Stack
-<p align="center"> <img src="https://skillicons.dev/icons?i=androidstudio,java,kotlin,firebase,git,github"/> </p>
+🔄 Flow:
 
-📱 Android Development
+Client sends request (SOS / data)
 
-☁️ Firebase Backend
+Server processes request
 
-📍 GPS Services
+Data stored/retrieved from database
 
-🔔 SMS API
+Response sent back to client
+
+Designed to run completely on a local machine without external services
 
 📂 Project Structure
 📦 Women-Safety-App
- ┣ 📂 app.py
- ┣ 📂 app1.py
- ┣ 📂 client.py
- ┣ 📂 codathon.py
- ┣ 📂 demo_client.py
- ┣ 📂 safezone.db
- ┣ 📂 server.py
- ┣ 📜 
- 
-⚙️ Installation Guide
-# 1. Clone the repo
-git clone https://github.com/metadore/WomenSafetyapp-prototype.git
+ ┣ 📄 app.py            # Main application entry point
+ ┣ 📄 app1.py           # Alternate / experimental logic
+ ┣ 📄 client.py         # Client-side communication
+ ┣ 📄 demo_client.py    # Demo/testing client
+ ┣ 📄 server.py         # Backend server
+ ┣ 📄 codathon.py       # Hackathon prototype version
+ ┣ 📄 safezone.db       # SQLite database
+⚙️ How to Run (Local Setup)
+# Clone the repository
+git clone https://github.com/metadore/women-safety-app.git
 
-# 2. Open in Android Studio
+cd women-safety-app
+▶️ Run the project:
+# Step 1: Start the server
+python server.py
+# Step 2: Run client (in a new terminal)
+python client.py
+🧪 Demo Mode:
+python demo_client.py
+🛠️ Tech Stack
 
-# 3. Build & Run 🚀
-🌟 Future Scope
+🐍 Python
 
-🎥 Auto video recording during SOS
+🔌 Socket Programming (assumed for client-server)
 
-⌚ Smartwatch integration
+🗄️ SQLite Database
 
-🌐 Community safety alerts
+⚙️ Local Execution Environment
 
-🤖 AI threat prediction
+🎯 Purpose of This Project
+
+This project is built to:
+
+Demonstrate basic safety system design
+
+Showcase client-server architecture in Python
+
+Serve as a foundation for advanced safety apps
+
+🌟 Future Improvements
+
+📍 Real-time GPS tracking
+
+📲 SMS / alert integration
+
+🌐 Web or mobile interface
+
+🤖 Smart triggers (voice / shake detection)
+
+☁️ Cloud deployment
 
 🤝 Contribution
-<p align="center"> <img src="https://img.shields.io/badge/PRs-Welcome-ff69b4?style=for-the-badge"/> </p>
-1. Fork 🍴
-2. Clone 📥
-3. Improve ✨
-4. Pull Request 🚀
-📊 Project Stats
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical"/> </p>
-🌐 Connect With Me
-<p align="center"> <a href="#"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github"/></a> <a href="#"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"/></a> <a href="#"><img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail"/></a> </p>
+
+Feel free to improve this project:
+
+Fork → Clone → Modify → Pull Request 🚀
 📜 License
 
-📝 MIT License — Free to use & modify
+MIT License — free to use and modify
 
-💬 Final Message
-<p align="center"> <img src="https://readme-typing-svg.herokuapp.com?color=FF1493&size=20&center=true&vCenter=true&width=500&lines=Safety+is+not+a+feature.;It's+a+necessity.;Let's+build+a+safer+world+💖"/> </p>
+💬 Final Note
+
+“Technology becomes meaningful when it solves real-world problems simply.”
+
 ⭐ Support
 
-If you like this project:
+If you found this useful:
 
-🌟 Star it
+⭐ Star the repo
+
 🍴 Fork it
+
 📢 Share it
 
-<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=8a2be2,ff69b4&height=120&section=footer"/> </p>
-🔥 BONUS (Make it EVEN MORE INSANE)
-
-👉 Add real images:
-
-/screenshots/home.png
-/screenshots/sos.png
-
-👉 Replace:
-
-your-username with your GitHub username
-
-Demo GIFs with your actual app
+<p align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=8a2be2,ff69b4&height=100&section=footer"/> </p>
